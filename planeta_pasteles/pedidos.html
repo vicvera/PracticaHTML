@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <title>El planeta de los pasteles</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img src="./images/logo_pastel.png" class="img-fluid" alt="Responsive image" width="80" height="80">
+          <span class="fs-4">El planeta de los pasteles</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="productos.html" class="nav-link" aria-current="page">Productos</a></li>
+          <li class="nav-item"><a href="pedidos.html" class="nav-link active">Pedidos</a></li>
+          <li class="nav-item"><a href="admin.html" class="nav-link">Administración</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="container mb-3">
+      <h3>Realiza tu pedido</h3>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Teléfono</label>
+          <input type="text" class="form-control" id="phone" pattern="[789][0-9]{9}" maxlength="10">
+        </div>
+        <div class="mb-3">
+          <label for="mail" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="mail">
+        </div>
+        <div class="mb-3">
+          <label for="flavor" class="form-label">Sabor</label>
+          <select class="form-select" multiple>
+            <option value="1">Supremo de naranja</option>
+            <option value="2">Aleman</option>
+            <option value="3">Guayaba</option>
+            <option value="4">Triple chocolate</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Descripción</label>
+          <textarea id="description" rows="5" cols="50" aria-describedby="descriptionHelp" class="form-control"></textarea>
+          <div id="descriptionHelp" class="form-text">Describa detalladamente su pedido.</div>
+        </div>
+        <div>
+          <label class="form-label">Selecciona la decoración de tu pastel</label>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <img src="images/banderin.webp" class="img-fluid img-thumbnail" alt="Responsive image" width="120" height="120">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Banderin</label>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/guirnalda.jpg" class="img-fluid img-thumbnail" alt="Responsive image" width="120" height="120">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Guirnalda</label>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/topper.jpg" class="img-fluid img-thumbnail" alt="Responsive image" width="120" height="120">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Topper</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+    <div class="container">
+      <footer class="pt-5">
+        <div class="row">
+          <div class="col-6">
+            <h5>Dirección</h5>
+            <p>Av. Universidad 574, Vértiz Narvarte, Benito Juárez, 03600 Ciudad de México, CDMX</p>
+          </div>
+    
+          <div class="col-3">
+            <h5>Teléfono</h5>
+            <p>5545297416</p>
+          </div>
+    
+          <div class="col-3">
+            <h5>Horario</h5>
+            <p>Martes - Domingo<br>7:00am - 8:00pm</p>
+          </div>
+        </div>
+    
+        <div class="d-flex justify-content-between pt-4 mt-4 border-top">
+          <p>© 2021 Company, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
